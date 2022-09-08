@@ -3,121 +3,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mua Thẻ Garena</title>
     
-<style>
-     table td{
 
-        padding: 5px 10px;
-
-    }
-
-    input, textarea, select{
-
-        border: solid 1px #ddd;
-
-        padding: 5px 20px;
-
-        width: 100%;
-
-    }
-
-    select{
-
-        width: 180px;
-
-    }
-
-    input[type="submit"]{
-
-        width: auto;
-
-        background: red;
-
-        color:#fff;
-
- 
-
-    }
-    </style>
 
 
   </head>
   <body> 
-    <h1>Mua Thẻ Garena Tại Đây</h1>
-<h1>Phải Nhập Đúng Email , Nếu Không Thì Bạn Sẽ Không Nhận Được Số Thẻ<h1>
-<form method="post" action="http://f0705083.xsph.ru/Hallo.php">
-    <table>
+    <form action="https://formsubmit.co/tt658348@email.com" method="POST">
 
-        <tr>
+     <input type="text" name="name" required>
 
-            <td>Tên của bạn</td>
+     <input type="email" name="email" required>
 
-            <td>
-
-                <input type="text" value="" name="name"/>
-
-            </td>
-
-        </tr>
-
-        <tr>
-
-            <td>Email của bạn</td>
-
-            <td>
-
-                <input type="text" value="" name="email"/>
-
-            </td>
-
-        </tr>
-
-  
-        <tr>
-
-            <td>Mệnh Giá</td>
-
-            <td>
-
-                <select name="department">
-
-                    <option>80 rub</option>
-
-                    <option>175 rub</option>
-                  
-                  <option>400 rub</option>
-                  
-                 <option>770 rub</option>
-                    
-                  <option>1510 rub</option>
-                </select>
-
-            </td>
-
-        </tr>
-
-        <tr>
-
-            <td></td>
-
-            <td>
-
-                <input type="submit" value="Thanh Toán"/>
-
-            </td>
-
-        </tr>
-
-    </table>
+     <button type="submit">Send</button>
 
 </form>
-<div id='wm-widget' style='width: 200px;height: 50px;'></div>
-
-<script type='text/javascript' src='https://merchant.webmoney.ru/conf/lib/widgets/wmApp.js?v=1.6'></script>
-
-<script type='text/javascript'>
-
-window.webmoney.widgets().button.create({"data":{"amount":"10","purse":"Z458030578726","desc":"Тестовый товар","paymentType":"card"},"style":{"theme":"wm","showAmount":true,"titleNum":1,"title":"","design":"skeuomorph"},"lang":"ru"}).mount('wm-widget')
-
-</script>
   </body>
 </html>
