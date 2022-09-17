@@ -27,40 +27,24 @@ background: #FFC0CB;
 </style>
 </head>
 <body>
-<div id="phai">
-<form id=pay name=pay method="POST" action="https://merchant.webmoney.ru/lmi/payment.asp" accept-charset="windows-1251" >
-<p>Mua</p>
-<img src="https://gamezz.cf/h.jpg">
-<p>
-<input type="hidden" name="LMI_PAYMENT_AMOUNT" value="5.0" />
-<input type="hidden" name="LMI_PAYMENT_DESC" value="The Garena 352 rub" />
-<input type="hidden" name="LMI_PAYMENT_NO" value="1">
-<input type="hidden" name="LMI_PAYEE_PURSE" value="Z458030578726"/>
-<input type="hidden" name="LMI_SUCCESS_URL" value="http://gamezz.cf/conf/success.html">
-<input type="hidden" name="LMI_FAIL_URL" value="http://gamezz.cf/conf/fail.html">
-</p>
-<p>
-<input class="nam" type="submit" value="Thanh Toán"/>
-</p>
+<form method="post" action="https://payeer.com/merchant/">
+<input type="hidden" name="m_shop" value="12345">
+<input type="hidden" name="m_orderid" value="1">
+<input type="hidden" name="m_amount" value="1.00">
+<input type="hidden" name="m_curr" value="USD">
+<input type="hidden" name="m_desc" value="dGVzdA==">
+<input type="hidden" name="m_sign"
+value="9F86D081884C7D659A2FEAA0C55AD015A3BF4F1B2B0B822CD15D6C15B0F0
+0A08">
+<!--
+<input type="hidden" name="form[ps]" value="2609">
+<input type="hidden" name="form[curr[2609]]" value="USD">
+-->
+<!--
+<input type="hidden" name="m_params" value="">
+-->
+<input type="submit" name="m_process" value="send" />
 </form>
-</div>
 
-<div id="trai">
-<form id=pay name=pay method="POST" action="https://merchant.webmoney.ru/lmi/payment.asp" accept-charset="windows-1251" >
-<p>Mua</p>
-<img src="https://gamezz.cf/h.jpg">
-<p>
-<input type="hidden" name="LMI_PAYMENT_AMOUNT" value="5.0" />
-<input type="hidden" name="LMI_PAYMENT_DESC" value="The Garena 352 rub" />
-<input type="hidden" name="LMI_PAYMENT_NO" value="1">
-<input type="hidden" name="LMI_PAYEE_PURSE" value="Z458030578726"/>
-<input type="hidden" name="LMI_SUCCESS_URL" value="http://gamezz.cf/conf/success.html">
-<input type="hidden" name="LMI_FAIL_URL" value="http://gamezz.cf/conf/fail.html">
-</p>
-<p>
-<input class="nam" type="submit" value="Thanh Toán"/>
-</p>
-</form>
-</div>
 </body>
 </html>
