@@ -6,8 +6,10 @@
  text-align: center;
  background: #FFC0CB;
 }
-
- a {
+ img {
+ border-radius: 25px;
+}
+ Mua {
  color: #ffffff;
  border-radius: 25px;
  padding: 10px 40px 10px 40px;
@@ -20,9 +22,8 @@
 <h1>Mua Thẻ Garena Việt Nam</h1>
 <div>
 <img src="/images.png">
-<p>Mua Thẻ 5 dollar</p>
+<p>Mua Thẻ 5 dollar</p><br>
 <form id=pay name=pay method="POST" action="https://merchant.webmoney.ru/lmi/payment.asp" accept-charset="windows-1251" >
-<p>Thanh Toán Qua Webmoney Hoặc Thẻ Ngân Hàng</p>
 <p>
 <input type="hidden" name="LMI_PAYMENT_AMOUNT" value="5.0" />
 <input type="hidden" name="LMI_PAYMENT_DESC" value="Mua Hang" />
@@ -30,9 +31,24 @@
 <input type="hidden" name="LMI_PAYEE_PURSE" value="Z458030578726" />
 </p>
 <p>
-<input type="submit" value="submit" />
+<input class="Mua" type="submit" value="Mua" />
 </p>
 </form>
 </div>
+<div>
+<p>Mua Thẻ 10 dollar</p>
+<img src="/images.png"><br>
+<form id=pay name=pay method="POST" action="https://merchant.webmoney.ru/lmi/payment.asp" accept-charset="windows-1251" >
+<p>
+<input type="hidden" name="LMI_PAYMENT_AMOUNT" value="10.0" />
+<input type="hidden" name="LMI_PAYMENT_DESC" value="Mua Hang" />
+<input type="hidden" name="LMI_PAYMENT_NO" value="1">
+<input type="hidden" name="LMI_PAYEE_PURSE" value="Z458030578726" />
+</p>
+<p>
+<input class="Mua" type="submit" value="Mua" />
+</p>
+</div>
+</form>
 </body>
 </html>
