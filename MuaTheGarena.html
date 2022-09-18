@@ -53,7 +53,25 @@
 <p>
 <input class="Mua" type="submit" value="Mua" />
 </p>
-</div>
 </form>
+</div>
+<br>
+<br>
+<br>
+<br>
+<p>Mua Thẻ 15 dollar</p>
+<img src="/images.png"><br>
+<form id=pay name=pay method="POST" action="https://merchant.webmoney.ru/lmi/payment.asp" accept-charset="windows-1251" >
+<p>
+<input type="hidden" name="LMI_PAYMENT_AMOUNT" value="15.0" />
+<input type="hidden" name="LMI_PAYMENT_DESC" value="Mua Hang" />
+<input type="hidden" name="LMI_PAYMENT_NO" value="1">
+<input type="hidden" name="LMI_PAYEE_PURSE" value="Z458030578726" />
+</p>
+<p>
+<input class="Mua" type="submit" value="Mua" />
+</p>
+</form>
+</div>
 </body>
 </html>
